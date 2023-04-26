@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Dashboard</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link href="assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <h2>
+            Katrina
+            <span class="text-blue-1 d-none d-md-inline-block">Tours</span>
+          </h2>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item dropdown pe-3">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="assets/img/profile-img.jpg"
+                alt="Profile"
+                class="rounded-circle"
+              />
+              <span class="d-none d-md-block dropdown-toggle ps-2"
+                >K. Anderson</span
+              >
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
+            >
+              <li class="dropdown-header">
+                <h6>Kevin Anderson</h6>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html"
+                >
+                  <i class="bi bi-person"></i>
+                  <span>My Profile</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="bi bi-box-arrow-right"></i>
+                  <span>Sign Out</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="index.html">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="tours.html">
+            <i class="bi bi-grid"></i>
+            <span>Tours</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="transportations.html">
+            <i class="bi bi-grid"></i>
+            <span>Transportations</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="add-tour.html">
+            <i class="bi bi-box-arrow-in-down"></i>
+            <span>Add Tour</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="add-transportation.html">
+            <i class="bi bi-box-arrow-in-down"></i>
+            <span>Add Transportation</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="add-admin.html">
+            <i class="bi bi-box-arrow-in-down"></i>
+            <span>Add Admin</span>
+          </a>
+        </li>
+        <li class="nav-heading">Pages</li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="users-profile.html">
+            <i class="bi bi-person"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-login.html">
+            <i class="bi bi-box-arrow-in-right"></i>
+            <span>Login</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <div id="main" class="bg-light-2">
+      <div class="pagetitle">
+        <h1>Add Tour</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Add Tour</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="p-4 rounded-1 bg-white shadow-3">
+        <div class="col-xl-10">
+          <div class="text-18 fw-500 mb-2">Tour Content</div>
+          <form action="" method="post">
+            <div class="row gy-4">
+              <div class="col-12">
+                <div class="form-input">
+                  <input type="text" name="" id="" required />
+                  <label class="lh-1 text-16 text-light-1">Name</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-input">
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="5"
+                    required
+                  ></textarea>
+                  <label class="lh-1 text-16 text-light-1">Content</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-input">
+                  <input type="number" name="" id="" required />
+                  <label class="lh-1 text-16 text-light-1">Price</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-input">
+                  <input type="text" name="" id="" required />
+                  <label class="lh-1 text-16 text-light-1">Duration</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-input">
+                  <input type="text" name="" id="" required />
+                  <label class="lh-1 text-16 text-light-1">Days</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-input">
+                  <input type="text" name="" id="include-input" required />
+                  <label class="lh-1 text-16 text-light-1">Include</label>
+                </div>
+                <button
+                  class="button md mt-2 blue-1 bg-blue-1-05 text-blue-1"
+                  type="button"
+                  id="include-btn"
+                >
+                  Add
+                </button>
+                <ul class="include-ul ms-4 mt-3"></ul>
+              </div>
+              <div class="col-6">
+                <div class="form-input">
+                  <input type="text" name="" id="exclude-input" required />
+                  <label class="lh-1 text-16 text-light-1">Exclude</label>
+                </div>
+                <button
+                  class="button md mt-2 blue-1 bg-blue-1-05 text-blue-1"
+                  type="button"
+                  id="exclude-btn"
+                >
+                  Add
+                </button>
+                <ul class="exclude-ul ms-4 mt-3"></ul>
+              </div>
+              <div class="col-12">
+                <div class="fw-500">Image</div>
+                <div class="row upload-image gy-2 pt-3">
+                  <div class="col-auto cursor-pointer">
+                    <input
+                      type="file"
+                      id="upload-image"
+                      name="upload-image"
+                      class="d-none"
+                    />
+                    <label for="upload-image">
+                      <div class="w-200">
+                        <div class="d-flex ratio">
+                          <div
+                            class="d-flex align-items-center justify-content-center flex-column text-center bg-blue-2 h-100 absolute rounded-1 border-type-1"
+                          >
+                            <div
+                              class="bi bi-file-earmark-arrow-up text-40 text-blue-1 mb-2"
+                            ></div>
+                            <div class="text-blue-1 fw-500">Upload Images</div>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-auto">
+                    <div class="w-200">
+                      <div class="d-flex ratio">
+                        <img
+                          src="assets/img/product-1.jpg"
+                          alt="Image"
+                          class="img-ratio rounded-1"
+                        />
+                        <div
+                          class="d-flex justify-content-end p-2 posotion-absolute"
+                        >
+                          <button
+                            type="button"
+                            class="size-40 border-0 bg-white rounded-1 d-flex align-items-center justify-content-center"
+                          >
+                            <i class="bi bi-trash3"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="w-200">
+                      <div class="d-flex ratio">
+                        <img
+                          src="assets/img/product-1.jpg"
+                          alt="Image"
+                          class="img-ratio rounded-1"
+                        />
+                        <div
+                          class="d-flex justify-content-end p-2 posotion-absolute"
+                        >
+                          <button
+                            type="button"
+                            class="size-40 border-0 bg-white rounded-1 d-flex align-items-center justify-content-center"
+                          >
+                            <i class="bi bi-trash3"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="w-200">
+                      <div class="d-flex ratio">
+                        <img
+                          src="assets/img/product-1.jpg"
+                          alt="Image"
+                          class="img-ratio rounded-1"
+                        />
+                        <div
+                          class="d-flex justify-content-end p-2 posotion-absolute"
+                        >
+                          <button
+                            type="button"
+                            class="size-40 border-0 bg-white rounded-1 d-flex align-items-center justify-content-center"
+                          >
+                            <i class="bi bi-trash3"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="w-200">
+                      <div class="d-flex ratio">
+                        <img
+                          src="assets/img/product-1.jpg"
+                          alt="Image"
+                          class="img-ratio rounded-1"
+                        />
+                        <div
+                          class="d-flex justify-content-end p-2 posotion-absolute"
+                        >
+                          <button
+                            type="button"
+                            class="size-40 border-0 bg-white rounded-1 d-flex align-items-center justify-content-center"
+                          >
+                            <i class="bi bi-trash3"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <button
+                  class="button md blue-1 bg-blue-1-05 text-blue-1 mt-2"
+                  type="submit"
+                >
+                  Add Item
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End #main -->
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

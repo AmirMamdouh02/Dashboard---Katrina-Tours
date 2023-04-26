@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Dashboard</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link href="assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <h2>
+            Katrina
+            <span class="text-blue-1 d-none d-md-inline-block">Tours</span>
+          </h2>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item dropdown pe-3">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="assets/img/profile-img.jpg"
+                alt="Profile"
+                class="rounded-circle"
+              />
+              <span class="d-none d-md-block dropdown-toggle ps-2"
+                >K. Anderson</span
+              >
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
+            >
+              <li class="dropdown-header">
+                <h6>Kevin Anderson</h6>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html"
+                >
+                  <i class="bi bi-person"></i>
+                  <span>My Profile</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="bi bi-box-arrow-right"></i>
+                  <span>Sign Out</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="index.html">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="tours.html">
+            <i class="bi bi-grid"></i>
+            <span>Tours</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="transportations.html">
+            <i class="bi bi-grid"></i>
+            <span>Transportations</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="add-tour.html">
+            <i class="bi bi-box-arrow-in-down"></i>
+            <span>Add Tour</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="add-transportation.html">
+            <i class="bi bi-box-arrow-in-down"></i>
+            <span>Add Transportation</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="add-admin.html">
+            <i class="bi bi-box-arrow-in-down"></i>
+            <span>Add Admin</span>
+          </a>
+        </li>
+        <li class="nav-heading">Pages</li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="users-profile.html">
+            <i class="bi bi-person"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-login.html">
+            <i class="bi bi-box-arrow-in-right"></i>
+            <span>Login</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <section>
+      <div id="main" class="bg-light-2">
+        <div class="pagetitle">
+          <h1>Transportations</h1>
+          <nav>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item">Dashboard</li>
+              <li class="breadcrumb-item active">Transportations</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="p-4 rounded-1 bg-white shadow-3 booking">
+          <div class="tabs">
+            <div class="tab-content pt-4">
+              <div
+                class="tab-pane fade active show"
+                id="all-booking"
+                role="tabpanel"
+              >
+                <div class="overflow-scroll scroll-bar-1">
+                  <table class="table col-12">
+                    <thead class="bg-light-2">
+                      <tr>
+                        <th>id</th>
+                        <th>Name </th>
+                        <th>description</th>
+                        <th>price</th>
+                        <th>edit</th>
+                        <th>Delete</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Soho - Nabg</td>
+                        <td>description</td>
+                        <td>30</td>
+                        <td class="fw-500"><button class="btn btn-warning ">Edit</button></td>
+                        <td class="fw-500"><button class="btn btn-danger">Delete</button></td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Soho - Nabg</td>
+                            <td>description</td>
+                            <td>30</td>
+                            <td class="fw-500"><button class="btn btn-warning ">Edit</button></td>
+                            <td class="fw-500"><button class="btn btn-danger">Delete</button></td>
+                          </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Soho - Nabg</td>
+                            <td>description</td>
+                            <td>30</td>
+                            <td class="fw-500"><button class="btn btn-warning ">Edit</button></td>
+                            <td class="fw-500"><button class="btn btn-danger">Delete</button></td>
+                          </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Soho - Nabg</td>
+                            <td>description</td>
+                            <td>30</td>
+                            <td class="fw-500"><button class="btn btn-warning ">Edit</button></td>
+                            <td class="fw-500"><button class="btn btn-danger">Delete</button></td>
+                          </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Soho - Nabg</td>
+                            <td>description</td>
+                            <td>30</td>
+                            <td class="fw-500"><button class="btn btn-warning ">Edit</button></td>
+                            <td class="fw-500"><button class="btn btn-danger">Delete</button></td>
+                          </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Soho - Nabg</td>
+                            <td>description</td>
+                            <td>30</td>
+                            <td class="fw-500"><button class="btn btn-warning ">Edit</button></td>
+                            <td class="fw-500"><button class="btn btn-danger">Delete</button></td>
+                          </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pt-4">
+            <div
+              class="row gy-3 gx-2 justify-content-lg-between justify-content-center"
+            >
+              <div class="col-auto">
+                <button class="button blue-1 rounded-5 size-40">
+                  <i class="fa-solid fa-chevron-left text-12"></i>
+                </button>
+              </div>
+              <div class="col-md-auto">
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <button class="button blue-1 rounded-5 size-40">1</button>
+                  </div>
+                  <div class="col-auto">
+                    <button class="button blue-1 rounded-5 size-40">2</button>
+                  </div>
+                  <div class="col-auto">
+                    <button class="button blue-1 rounded-5 size-40">3</button>
+                  </div>
+                  <div class="col-auto">
+                    <button class="button blue-1 rounded-5 size-40">4</button>
+                  </div>
+                  <div class="col-auto">
+                    <button
+                      class="button blue-1 rounded-5 size-40 bg-blue-1 text-white border-0"
+                    >
+                      5
+                    </button>
+                  </div>
+                  <div class="col-auto">
+                    <button class="button blue-1 rounded-5 size-40">6</button>
+                  </div>
+                  <div class="col-auto">
+                    <button class="button blue-1 rounded-5 size-40">7</button>
+                  </div>
+                  <div class="col-auto">
+                    <button class="button blue-1 rounded-5 size-40">8</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <button class="button blue-1 rounded-5 size-40">
+                  <i class="fa-solid fa-chevron-right text-12"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

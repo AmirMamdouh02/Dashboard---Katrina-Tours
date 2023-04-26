@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Dashboard</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link href="assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <h2>
+            Katrina
+            <span class="text-blue-1 d-none d-md-inline-block">Tours</span>
+          </h2>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item dropdown pe-3">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="assets/img/profile-img.jpg"
+                alt="Profile"
+                class="rounded-circle"
+              />
+              <span class="d-none d-md-block dropdown-toggle ps-2"
+                >K. Anderson</span
+              >
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
+            >
+              <li class="dropdown-header">
+                <h6>Kevin Anderson</h6>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html"
+                >
+                  <i class="bi bi-person"></i>
+                  <span>My Profile</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="bi bi-box-arrow-right"></i>
+                  <span>Sign Out</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="index.html">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tours.html">
+            <i class="bi bi-grid"></i>
+            <span>Tours</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="transportations.html">
+            <i class="bi bi-grid"></i>
+            <span>Transportations</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="add-tour.html">
+            <i class="bi bi-box-arrow-in-down"></i>
+            <span>Add Tour</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="add-transportation.html">
+            <i class="bi bi-box-arrow-in-down"></i>
+            <span>Add Transportation</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="add-admin.html">
+            <i class="bi bi-box-arrow-in-down"></i>
+            <span>Add Admin</span>
+          </a>
+        </li>
+        <li class="nav-heading">Pages</li>
+        <li class="nav-item">
+          <a class="nav-link" href="users-profile.html">
+            <i class="bi bi-person"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-login.html">
+            <i class="bi bi-box-arrow-in-right"></i>
+            <span>Login</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <main id="main" class="main bg-light-2">
+      <div class="pagetitle">
+        <h1>Profile</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item">Users</li>
+            <li class="breadcrumb-item active">Profile</li>
+          </ol>
+        </nav>
+      </div>
+      <!-- End Page Title -->
+
+      <section class="section profile">
+        <div class="row justify-content-between">
+          <div class="col-xl-4">
+            <div class="card border-0 mb-xl-0 mb-3">
+              <div
+                class="card-body profile-card pt-4 d-flex flex-column align-items-center"
+              >
+                <img
+                  src="assets/img/profile-img.jpg"
+                  alt=""
+                  class="rounded-circle"
+                />
+                <button class="button mt-3 blue-1 border py-2 px-3">
+                  Change Image Profile
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-8">
+            <div class="card border-0">
+              <div class="card-body p-3">
+                <ul class="nav nav-tabs border-bottom" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="overview-tap"
+                      data-bs-toggle="pill"
+                      data-bs-target="#profile-overview"
+                      type="button"
+                      role="tab"
+                      aria-controls="profile-overview"
+                      aria-selected="true"
+                    >
+                      Overview
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="edit-tap"
+                      data-bs-toggle="pill"
+                      data-bs-target="#profile-edit"
+                      type="button"
+                      role="tab"
+                      aria-controls="profile-edit"
+                      aria-selected="false"
+                      tabindex="-1"
+                    >
+                      Edit Profile
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="change-password"
+                      data-bs-toggle="pill"
+                      data-bs-target="#profile-change-password"
+                      type="button"
+                      role="tab"
+                      aria-controls="profile-change-password"
+                      aria-selected="false"
+                      tabindex="-1"
+                    >
+                      Change Password
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content pt-2">
+                  <div
+                    class="tab-pane fade profile-overview show active"
+                    id="profile-overview"
+                    role="tabpanel"
+                    aria-labelledby="#overview-tap"
+                  >
+                    <h5 class="card-title py-3 mb-2">Profile Details</h5>
+                    <div class="row mb-3">
+                      <div class="col-lg-3 col-md-4 label">Full Name</div>
+                      <div class="col-lg-9 col-md-8">Abdullah Mohamed</div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-lg-3 col-md-4 label">Country</div>
+                      <div class="col-lg-9 col-md-8">USA</div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-lg-3 col-md-4 label">Phone</div>
+                      <div class="col-lg-9 col-md-8">12345678910</div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-lg-3 col-md-4 label">Email</div>
+                      <div class="col-lg-9 col-md-8">assacac@gmail.com</div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade profile-edit pt-3"
+                    id="profile-edit"
+                    role="tabpanel"
+                    aria-labelledby="#edit-tap"
+                  >
+                    <form>
+                      <div class="row mb-3">
+                        <label
+                          for="fullName"
+                          class="col-md-4 col-lg-3 col-form-label"
+                          >Full Name</label
+                        >
+                        <div class="col-md-8 col-lg-9">
+                          <input
+                            name="fullName"
+                            type="text"
+                            class="form-control"
+                            id="fullName"
+                            value="Abdullah Mohamed"
+                          />
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label
+                          for="Country"
+                          class="col-md-4 col-lg-3 col-form-label"
+                          >Country</label
+                        >
+                        <div class="col-md-8 col-lg-9">
+                          <input
+                            name="country"
+                            type="text"
+                            class="form-control"
+                            id="Country"
+                            value="USA"
+                          />
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label
+                          for="Phone"
+                          class="col-md-4 col-lg-3 col-form-label"
+                          >Phone</label
+                        >
+                        <div class="col-md-8 col-lg-9">
+                          <input
+                            name="phone"
+                            type="text"
+                            class="form-control"
+                            id="Phone"
+                            value="12345678910"
+                          />
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label
+                          for="Email"
+                          class="col-md-4 col-lg-3 col-form-label"
+                          >Email</label
+                        >
+                        <div class="col-md-8 col-lg-9">
+                          <input
+                            name="email"
+                            type="email"
+                            class="form-control"
+                            id="Email"
+                            value="yguyc@gmail.com"
+                          />
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <button
+                          type="submit"
+                          class="button dark-1 bg-blue-1 md text-white"
+                        >
+                          Save Changes
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div
+                    class="tab-pane fade profile-change-password pt-3"
+                    id="profile-change-password"
+                    role="tabpanel"
+                    aria-labelledby="#change-password"
+                  >
+                    <form>
+                      <div class="row mb-3">
+                        <label
+                          for="currentPassword"
+                          class="col-md-4 col-lg-3 col-form-label"
+                          >Current Password</label
+                        >
+                        <div class="col-md-8 col-lg-9">
+                          <input
+                            name="password"
+                            type="password"
+                            class="form-control"
+                            id="currentPassword"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="row mb-3">
+                        <label
+                          for="newPassword"
+                          class="col-md-4 col-lg-3 col-form-label"
+                          >New Password</label
+                        >
+                        <div class="col-md-8 col-lg-9">
+                          <input
+                            name="newpassword"
+                            type="password"
+                            class="form-control"
+                            id="newPassword"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="row mb-3">
+                        <label
+                          for="renewPassword"
+                          class="col-md-4 col-lg-3 col-form-label"
+                          >Re-enter New Password</label
+                        >
+                        <div class="col-md-8 col-lg-9">
+                          <input
+                            name="renewpassword"
+                            type="password"
+                            class="form-control"
+                            id="renewPassword"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="text-center">
+                        <button
+                          type="submit"
+                          class="button dark-1 bg-blue-1 md text-white"
+                        >
+                          Change Password
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
